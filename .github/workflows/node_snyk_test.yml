@@ -11,6 +11,8 @@ jobs:
           node-version: 14
       - name: install Snyk CLI
         run: npm install -g snyk
+      - name: Lodash Install
+        run: npm install lodash --save
       - name: run Snyk Open Source Test
         run: snyk test
         env:
