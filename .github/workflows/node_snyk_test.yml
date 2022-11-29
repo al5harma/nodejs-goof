@@ -1,4 +1,4 @@
-name: Node Scan using Snyk
+name: "Snyk"
 on: push
 jobs:
   security:
@@ -11,14 +11,15 @@ jobs:
           node-version: 14
       - name: install Snyk CLI
         run: npm install -g snyk
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-      - name: Verify Snyk is Authenticated
-        run: snyk auth
       - name: run Snyk Open Source Test
         run: snyk test
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: run Snyk Code Test
         run: snyk code test
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          
         continue-on-error: true # To make sure that SARIF upload gets called
         
       - name: Upload result to GitHub Code Scanning
@@ -26,4 +27,6 @@ jobs:
          # args: --sarif-file-output=snyk.sarif
         with:
          sarif_file: snyk.sarif
+
+
 
