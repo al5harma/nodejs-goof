@@ -16,11 +16,11 @@ jobs:
       - name: NPM Install
         run: npm install 
       - name: run Snyk Open Source Test
-        run: snyk test --severity-threshold=high
+        run: snyk test --severity-threshold=critical
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: run Snyk Code Test
-        run: snyk code test
+        run: snyk code test --severity-threshold=high
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           
