@@ -1,6 +1,6 @@
 # Goof - Snyk's vulnerable demo app
 [![Known Vulnerabilities](https://snyk.io/test/github/snyk/goof/badge.svg?style=flat-square)](https://snyk.io/test/github/snyk/goof)
-![example workflow](https://github.com/al5harma/nodejs-goof/blob/main/.github/workflows/node_snyk_test.yml/badge.svg)
+![Last Action Workflow](https://github.com/al5harma/nodejs-goof/blob/main/.github/workflows/node_snyk_test.yml/badge.svg)
 
 A vulnerable Node.js demo application, based on the [Dreamers Lab tutorial](http://dreamerslab.com/blog/en/write-a-todo-list-with-express-and-mongodb/).
 
