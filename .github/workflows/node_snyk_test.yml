@@ -18,7 +18,7 @@ jobs:
       - name: snyk-to-html Install
         run: npm install -g snyk-to-html 
       - name: run Snyk Open Source Test
-        run: snyk test --sarif > snyk.sarif || true
+        run: snyk monitor --sarif > snyk.sarif || true
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: run Snyk Code Test
