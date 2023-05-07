@@ -68,3 +68,6 @@ patch:
         patched: '2022-11-29T20:15:30.148Z'
     - tap > treport > import-jsx > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
         patched: '2022-11-29T20:15:30.148Z'
+  'npm:ms:20151024':
+    - humanize-ms > ms:
+        patched: '2023-05-07T03:06:59.625Z'
