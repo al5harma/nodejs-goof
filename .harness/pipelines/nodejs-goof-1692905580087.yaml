@@ -43,9 +43,18 @@ pipeline:
                   timeout: ""
                   type: Plugin
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
+          caching:
+            enabled: true
+            paths: []
         type: CI
+        variables:
+          - name: SNYK_TOKEN
+            type: String
+            description: Snyk Token
+            required: true
+            value: 07d7e46c-5153-4704-9aba-5b7d2e5a6459
