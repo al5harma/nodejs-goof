@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_nodejs_goof_1692905583732-pr-trigger-input-set
+  identifier: Build_nodejs_goof_1692905583732prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: testing
+  pipeline:
+    identifier: Build_nodejs_goof_1692905583732
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
