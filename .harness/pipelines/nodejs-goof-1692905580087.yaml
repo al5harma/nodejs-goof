@@ -79,3 +79,4 @@ pipeline:
             description: Snyk Token
             required: true
             value: 07d7e46c-5153-4704-9aba-5b7d2e5a6459
+  allowStageExecutions: true
