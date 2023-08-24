@@ -49,7 +49,7 @@ pipeline:
                   identifier: snyktest
                   name: snyk_test
                   spec:
-                    command: snyk test
+                    command: snyk test --json --severity-threshold=high > results.json
                   timeout: ""
                   type: Run
               - step:
