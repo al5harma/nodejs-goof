@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_nodejs_goof_1692905583732-push-trigger-input-set
+  identifier: Build_nodejs_goof_1692905583732pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: testing
+  pipeline:
+    identifier: Build_nodejs_goof_1692905583732
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
