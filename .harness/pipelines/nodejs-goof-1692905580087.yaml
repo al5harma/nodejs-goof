@@ -32,6 +32,27 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
+                  identifier: snykinstall
+                  name: snyk_install
+                  spec:
+                    command: npm install snyk
+                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: snykauth
+                  name: snyk_auth
+                  spec:
+                    command: snyk auth
+                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: snyktest
+                  name: snyk_test
+                  spec:
+                    command: snyk test
+                  timeout: ""
+                  type: Run
+              - step:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
